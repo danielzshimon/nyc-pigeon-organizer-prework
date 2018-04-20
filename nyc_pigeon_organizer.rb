@@ -5,3 +5,12 @@ def nyc_pigeon_organizer(data)
         name_array.each do |name|
           if new_pigeon[name].nil?
             new_pigeon[name] = {}
+          end 
+          if new_pigeon[name][:color].nil?
+           new_pigeon[name][:color] = []
+         end
+        new_pigeon[name][key] << attribute
+       end
+     end
+   end
+ end
